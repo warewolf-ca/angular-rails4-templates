@@ -1,4 +1,4 @@
-require 'angular-rails-templates/compact_javascript_escape'
+require 'angular-rails4-templates/compact_javascript_escape'
 
 module AngularRails4Templates
   class Processor
@@ -33,7 +33,7 @@ module AngularRails4Templates
 
     def template_name(name)
       path = name.sub /^(#{config.ignore_prefix.join('|')})/, ''
-      "#{path}.html"
+      path.ends_with?('.html') ? path : "#{path}.html"
     end
 
     def call(input)

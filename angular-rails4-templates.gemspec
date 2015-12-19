@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/gasligh/angular-rails4-templates"
   s.summary     = "Use your angular templates with rails4/sprockets3 asset pipeline"
 
-  s.files = %w(README.md LICENSE) + Dir["lib/**/*", "vendor/**/*"]
+  s.files = %w(README.md LICENSE) + Dir["lib/**/*", "app/**/*"]
   s.license = 'MIT'
 
   s.require_paths = ["lib"]
